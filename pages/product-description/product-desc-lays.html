@@ -1,0 +1,259 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-commerce Grocery Store">
+    <meta name="author" content="Milan Shrestha">
+    <title>Fresh Mart</title>
+
+    <!-- Linking External CSS File -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- Linking External Javascript File -->
+    <script src="../../javascript/script.js"></script>
+
+</head>
+
+<body>
+    <!-- Start Of Navigation Header -->
+    <div id="scroll-behaviour">
+
+        <div class="header"></div>
+
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <a style="text-decoration: none;" href="../../index.html">
+                    <span style="color: #5ccf71;">Fresh</span><span style="color: white;">Mart</span>
+                </a>
+            </div>
+            <!-- End Of Logo -->
+
+            <!-- Navbar Contents -->
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../products.html">Products</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../about-us.html">About Us</a></li>
+                <li><a href="../faq.html" class="active-page">FAQs</a></li>
+
+                <!-- Cart Icon -->
+                <li>
+                    <a href="#" onclick="hideShowdiv()"><img src="../../assets/icons/cart.png" alt="cart icon"
+                            align="center" style="height: 26px; width: 26px;"></a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+    <!-- End Of Navigation Header -->
+
+    <!-- Hide Show Cart -->
+    <div id="cart" class="cart">
+
+        <div class="cart-box">
+
+            <!-- Nutella -->
+            <div style="display: inline-flex;">
+                <img src="../../assets/products/nutella.png" alt="nutella" width="80px">
+
+                <div style="margin-top: 10px; margin-inline-start: 5px;">
+                    <h2 class="product-name">Nutella Hazelnut</h2>
+
+                    <p>Rs. 800 <span>x2</span>
+                    </p>
+                </div>
+            </div>
+
+
+            <hr class="cart-box-hr-1">
+
+            <!-- Lays -->
+            <div style="display: inline-flex;">
+                <img src="../../assets/products/tomato.png" alt="nutella" width="80px">
+
+                <div style="margin-top: 10px; margin-inline-start: 5px;">
+                    <h2 class="product-name">Fresh Tomatoes</h2>
+
+                    <p>Rs. 150 <span>x5</span>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="cart-box-hr-1">
+
+            <!-- Nutella -->
+            <div style="display: inline-flex;">
+                <img src="../../assets/products/lays.png" alt="nutella" width="80px">
+
+                <div style="margin-top: 10px; margin-inline-start: 5px;">
+                    <h2 class="product-name">Lays Deep Pizza</h2>
+
+                    <p>Rs. 120 <span>x4</span>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="cart-box-hr-1">
+
+            <h3>Total: <span style="color: #fe5100; font-size: 20px;">Rs.2830</span></h3>
+            <br>
+
+            <button style="width: 80%; margin: auto;" type="button" class="add-to-cart">Check Out</button>
+
+        </div>
+
+    </div>
+    <!-- End Of Hide Show Cart -->
+
+    <!-- Start Of Product Description -->
+    <div class="product-desc-container" id="detailOne">
+        <!-- Nutela -->
+        <div class="product-desc-box">
+
+            <a href="../../index.html#product">
+                <img src="../../assets/icons/close.png" alt="close icon" class="closebtn">
+            </a>
+
+            <img src="../../assets/products/lays.png" alt="nutella" />
+
+            <div class="vl"></div>
+
+            <div class="product-desc-title">
+                <h1 class="product-name">Lays-Deep Dish Pizza</h1>
+
+                <h3>Price:</h3>
+                <h2 style="color: #4eb060;">Rs. 150 <span
+                        style="font-size: 18px; color: black;"><del>Rs.160</del></span></h2>
+
+                <h3 style="margin-top: 15px;">Ratings:</h3>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.5/5 (18) -251 Sold</b>
+
+                <h3 style="margin-top: 15px;">Product Detail:</h3>
+
+                <div>
+                    <p>
+                        Wherever celebrations and good times happen, the Lay's brand will be there just as it has been for more than 75 years. With flavors almost as rich as our history, we have a potato chip or crisp flavor guaranteed to bring a smile on your face.
+                    </p>
+                </div>
+
+                <br>
+
+                <h3 style="margin-top: 15px;">Services:</h3>
+                <ul style="margin-left: 20px;">
+                    <li>14 days free & easy return (Change of mind is not applicable)</li>
+                    <li>Warranty not available</li>
+                </ul>
+
+                <h3 style="margin-top: 15px;">Specification:</h3>
+                <ul style="margin-left: 20px;">
+                    <li>Product Volume : 7.75oz</li>
+                    <li>Brand : Lays</li>
+                </ul>
+
+                <button style="width: 25%; height: 50px;" type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Subscription Email -->
+        <div class="footer-email">
+            <h2>Subscribe to us for <span style="color: #fe5100;">NEW ARRIVALS </span>and other information</h2>
+
+            <div style="margin-top: 20px;">
+                <form class="search-box">
+                    <!-- Gmail Icon -->
+                    <img src="../../assets/icons/gmail.png" alt="search icon" height="20px" width="20px">
+
+                    <!-- placeholder -->
+                    <input type="text" class="search-input" placeholder="Enter your email address" name="search" />
+
+                    <!-- Subscribe Button -->
+                    <input type="submit" class="search-btn" value="Subscribe" />
+                </form>
+
+            </div>
+
+            <!-- Contact Info -->
+            <div style="margin-top: 20px;">
+
+                <div style="display: inline-flex; padding: 10px;">
+                    <img src="../../assets/icons/location.png" alt="location icon" height="20px">
+                    <p style="margin-left: 10px;"> Durbarmarg, Kathmandu</p>
+                </div>
+
+                <div style="display: inline-flex; padding: 10px;">
+                    <img src="../../assets/icons/call.png" alt="location icon" height="20px">
+                    <p style="margin-left: 10px;">+977 9814569852</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Copyright logo and stuff -->
+        <div class="footer-end">
+
+            <div>
+                <p style="color: white; margin-top: 10px;" align="center"><b>&copy; 2024 <span
+                            style="color: #4eb060;">Fresh</span><span style="color: white;">Mart</span>
+                        | All rights reserved.</b></p>
+            </div>
+
+            <!-- Payment Partner Logos -->
+            <div class="payment-partner">
+                <img src="../../assets/icons/visa.png" alt="visa logo" width="50px">
+                <img src="../../assets/icons/Esewa_logo.png" alt="E-Sewa logo" width="55px" height="32px">
+                <img src="../../assets/icons/ime-pay.jpg" alt="ime-pay logo" width="50px">
+                <img src="../../assets/icons/cod.png" alt="cod logo" width="80px">
+            </div>
+
+            <!-- Social Media Logos -->
+            <div class="footer-social">
+                <p>Stay Connected:</p>
+                <a href="https://www.facebook.com/"> <img src="../../assets/icons/facebook.png" alt="facebook logo" height="15px"></a>
+                <a href="https://twitter.com/"> <img src="../../assets/icons/twitter.png" alt="twitter logo" height="15px"></a>
+                <a href="https://instagram.com/"> <img src="../../assets/icons/instagram.png" alt="instagram logo" height="15px"></a>
+                <a href="https://youtube.com/"> <img src="../../assets/icons/youtube.png" alt="youtube logo" height="15px"></a>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- End Of Footer -->
+
+    <script>
+        // hide show div
+        var div = document.getElementById('cart');
+        var display = 1;
+
+        function hideShowdiv() {
+            if (display == 1) {
+                div.style.display = 'block';
+                display = 0;
+            }
+            else {
+                div.style.display = 'none';
+                display = 1;
+            }
+
+            // hide cart on scroll
+            window.onscroll = () => {
+                div.style.display = 'none';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

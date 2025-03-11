@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-commerce Grocery Store">
+    <meta name="author" content="Milan Shrestha">
+    <title>Fresh Mart</title>
+
+    <!-- Linking External CSS File -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Linking External Javascript File -->
+    <script src="../javascript/script.js"></script>
+
+</head>
+
+<body>
+        <!-- Start Of Navigation Header -->
+        <div id="scroll-behaviour">
+
+            <div class="header"></div>
+    
+            <nav >
+                <!-- Logo -->
+                <div class="logo">
+                    <a style="text-decoration: none;" href="../index.html">
+                        <span style="color: #5ccf71;">Fresh</span><span style="color: white;">Mart</span>
+                    </a>
+                </div>
+                <!-- End Of Logo -->
+    
+                <!-- Navbar Contents -->
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="products.html" class="active-page">Products</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+    
+                    <!-- Cart Icon -->
+                    <li>
+                        <a href="#" onclick="hideShowdiv()"><img src="../assets/icons/cart.png" alt="cart icon" align="center"
+                                style="height: 26px; width: 26px;"></a>
+                    </li>
+    
+                </ul>
+    
+            </nav>
+    
+        </div>
+        <!-- End Of Navigation Header -->
+    
+        <!-- Hide Show Cart -->
+        <div id="cart" class="cart">
+    
+            <div class="cart-box">
+    
+                <!-- Nutella -->
+                <div style="display: inline-flex;">
+                    <img src="../assets/products/nutella.png" alt="nutella" width="80px">
+    
+                    <div style="margin-top: 10px; margin-inline-start: 5px;">
+                        <h2 class="product-name">Nutella Hazelnut</h2>
+    
+                        <p>Rs. 800 <span>x2</span>
+                        </p>
+                    </div>
+                </div>
+    
+    
+                <hr class="cart-box-hr-1">
+    
+                <!-- Lays -->
+                <div style="display: inline-flex;">
+                    <img src="../assets/products/tomato.png" alt="nutella" width="80px">
+    
+                    <div style="margin-top: 10px; margin-inline-start: 5px;">
+                        <h2 class="product-name">Fresh Tomatoes</h2>
+    
+                        <p>Rs. 150 <span>x5</span>
+                        </p>
+                    </div>
+                </div>
+    
+                <hr class="cart-box-hr-1">
+    
+                <!-- Nutella -->
+                <div style="display: inline-flex;">
+                    <img src="../assets/products/lays.png" alt="nutella" width="80px">
+    
+                    <div style="margin-top: 10px; margin-inline-start: 5px;">
+                        <h2 class="product-name">Lays Deep Pizza</h2>
+    
+                        <p>Rs. 120 <span>x4</span>
+                        </p>
+                    </div>
+                </div>
+    
+                <hr class="cart-box-hr-1">
+    
+                <h3>Total: <span style="color: #fe5100; font-size: 20px;">Rs.2830</span></h3>
+                <br>
+    
+                <button style="width: 80%; margin: auto;" type="button" class="add-to-cart">Check Out</button>
+    
+            </div>
+    
+        </div>
+         <!-- End Of Hide Show Cart -->
+
+    <!-- Products List -->
+    <section class="product" style="margin-top: 100px;">
+
+        <!-- Vegetables -->
+        <div class="category-heading">
+            <h2 id="vegetable">Vegetables</h2>
+        </div>
+
+        <div class="product-container">
+
+            <!-- Lettuce -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/lettuce.png" alt="lettuce" />
+
+                <h2 class="product-name">Fresh Lettuce</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.5/5 (17) -95 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 399</h2>
+              
+                <h6 style="border: 1px solid; padding: 5px;">Free Delivery</h6>
+                
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Tomato -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/tomatoes.png" alt="tomato" />
+
+                <h2 class="product-name">Tomato - Hybrid</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.6/5 (28) -355 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 150</h2>
+                <b><del>Rs.160</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Broccoli -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/broccoli.png" alt="Broccoli" />
+
+                <h2 class="product-name">Broccoli</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.4/5 (25) -85 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 200</h2>
+                <b><del>Rs.220</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Carrot -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/carrot.png" alt="carrot" />
+
+                <h2 class="product-name">Carrot</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.8/5 (35) -256 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 100</h2>
+              
+                <h6 style="border: 1px solid; padding: 5px;">Free Delivery</h6>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+
+        </div>
+
+
+        <!-- Fresh Fruits -->
+        <div class="category-heading">
+            <h2 id="fruits" style="margin-top: 40px;">Fresh Fruits</h2>
+        </div>
+
+        <div class="product-container">
+
+            <!-- Strawberry -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/strawberry.png" alt="Strawberry" />
+
+                <h2 class="product-name">Strawberry</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 5/5 (20) -74 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 250</h2>
+                <b><del>Rs.280</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Papaya -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/papaya.png" alt="papaya" style="object-fit: cover; width: 200px;"/>
+
+                <h2 class="product-name">Papaya</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.7/5 (65) -355 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 220</h2>
+                <b><mark>30% Off</mark></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Mango -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/mango.png" alt="Mango" style="object-fit: cover; width: 200px;" />
+
+                <h2 class="product-name">Mango</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.9/5 (45) -326 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 240</h2>
+                <h6 style="border: 1px solid; padding: 5px;">Free Delivery</h6>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Orange -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/orange.png" alt="Orange" />
+
+                <h2 class="product-name">Orange</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.6/5 (45) -86 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 150</h2>
+                <b><mark>25% Off</mark></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+
+        </div>
+
+        <!-- Bread & Bakery-->
+        <div class="category-heading">
+            <h2 id="bakery" style="margin-top: 40px;">Bread & Bakery</h2>
+        </div>
+
+        <div class="product-container">
+
+            <!-- Croissant -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/croissant.png" alt="Croissant" style="object-fit: cover;"/>
+
+                <h2 class="product-name">Croissant Pain au chocolat</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 5/5 (35) -76 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 300</h2>
+                <b><del>Rs.340</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Apple Tart -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/apple-tart.png" alt="apple-tart" />
+
+                <h2 class="product-name">Apple Tart</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.5/5 (18) -251 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 180</h2>
+                <b><del>Rs.200</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- White Bread -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/white-bread.png" alt="White Bread" />
+
+                <h2 class="product-name">White Bread</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.7/5 (15) -166 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 150</h2>
+                <b><mark>15% off</mark></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Danish Pastry -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/Danish-Pastry.png" alt="Danish Pastry" style="object-fit: cover;" />
+
+                <h2 class="product-name">Danish Pastry</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.7/5 (15) -166 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 250</h2>
+                <h6 style="border: 1px solid; padding: 5px;">Free Delivery</h6>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+
+        </div>
+
+        <!-- Cold Drinks-->
+        <div class="category-heading">
+            <h2 id="drinks" style="margin-top: 40px;">Beverages</h2>
+        </div>
+
+        <div class="product-container">
+
+            <!-- Monster Energy Drinks -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/monster.png" alt="monster" />
+
+                <h2 class="product-name">Monster Energy</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.5/5 (45) -156 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 500</h2>
+                <b><del>Rs.580</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+            </a>
+
+            <!-- Cold Brew Coffee -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/cold-coffee.png" alt="cold coffee" />
+
+                <h2 class="product-name">Cold Brew Coffee</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.7/5 (81) -251 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 150</h2>
+                <b><del>Rs.160</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Pepsi -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/pepsi.png" alt="pepsi" />
+
+                <h2 class="product-name">Pepsi</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.6/5 (75) -274 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 150</h2>
+                <b><del>Rs.160</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+            </a>
+
+            <!-- Cranberry -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/cranberry.png" alt="Cranberry" />
+
+                <h2 class="product-name">Cranberry Juice</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.4/5 (124) -250 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 250</h2>
+                <b><del>Rs.260</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+
+        </div>
+
+        <!-- Snacks-->
+        <div class="category-heading">
+            <h2 id="snacks" style="margin-top: 40px;">Snacks</h2>
+        </div>
+
+        <div class="product-container">
+
+            <!-- Cheetos -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/cheetos.png" alt="cheetos" />
+
+                <h2 class="product-name">Cheetos</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.7/5 (15) -166 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 160</h2>
+                <b><del>Rs.180</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Lays -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/lays.png" alt="lays" />
+
+                <h2 class="product-name">Lays-Deep Dish Pizza</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.5/5 (18) -251 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 150</h2>
+                <b><del>Rs.160</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Popcorn -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/popcorn.png" alt="popcorn" />
+
+                <h2 class="product-name">Popcorn</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.8/5 (51) -256 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 200</h2>
+                <b><del>Rs.220</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Pringle -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/Pringle.png" alt="Pringle" />
+
+                <h2 class="product-name">Pringle</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.4/5 (28) -95 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 250</h2>
+                <b><del>Rs.260</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+
+        </div>
+
+        <!-- Milk & Dairy-->
+        <div class="category-heading">
+            <h2 id="milk" style="margin-top: 40px;">Milk & Dairy</h2>
+        </div>
+
+        <div class="product-container">
+
+            <!-- Butter -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/butter.png" alt="butter" />
+
+                <h2 class="product-name">Amul Butter</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.7/5 (15) -166 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 625</h2>
+                <b><del>Rs.650</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Soy Milk -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/soy-milk.png" alt="nutella" />
+
+                <h2 class="product-name">Soy Milk</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.5/5 (18) -61 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 250</h2>
+                <b><del>Rs.260</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Cheese -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/cheese.png" alt="cheese" />
+
+                <h2 class="product-name">Cheese</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.8/5 (65) -115 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 750</h2>
+                <b><del>Rs.770</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Yoghurt -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/Yoghurt.png" alt="Yoghurt" />
+
+                <h2 class="product-name">Yoghurt</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.4/5 (49) -86 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 220</h2>
+                <b><del>Rs.230</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+        </div>
+
+        <!-- Chocolates-->
+        <div class="category-heading">
+            <h2 id="chocolate" style="margin-top: 40px;">Chocolates</h2>
+        </div>
+
+        <div class="product-container">
+
+            <!-- Dark Chocolate -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/dark-chocolate.png" alt="dark-chocolate" />
+
+                <h2 class="product-name">Dark Chocolate</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.7/5 (115) -166 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 500</h2>
+                <b><del>Rs.510</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Lindor -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/lindor.png" alt="nutella" style="object-fit: cover;"/>
+
+                <h2 class="product-name">Hazelnut Lindor</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.5/5 (188) -251 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 400</h2>
+                <b><del>Rs.420</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Kitkat -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/Kitkat.png" alt="nutella" />
+
+                <h2 class="product-name">Nestle Kitkat</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.7/5 (65) -95 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 150</h2>
+                <b><del>Rs.160</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+            <!-- Toblerone -->
+            <a style="text-decoration: none;" href="#" class="product-box">
+
+                <img src="../assets/products/toblerone.png" alt="Toblerone" />
+
+                <h2 class="product-name">Nutella Hazelnut</h2>
+                <b> <span style="color: #ffe234;">&#9733;</span> 4.8/5 (75) -286 Sold</b>
+
+                <br>
+
+                <h2 style="color: #4eb060;">Rs. 360</h2>
+                <b><del>Rs.380</del></b>
+
+                <button type="button" class="add-to-cart" onclick="cartAlert()">Add to cart</button>
+
+            </a>
+
+
+        </div>
+
+    </section>
+    <!-- End Of Products List -->
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Subscription Email -->
+        <div class="footer-email">
+            <h2>Subscribe to us for <span style="color: #fe5100;">NEW ARRIVALS </span>and other information</h2>
+
+            <div style="margin-top: 20px;">
+                <form class="search-box" name="subsForm" onsubmit="subsAlert()">
+                    <!-- Gmail Icon -->
+                    <img src="../assets/icons/gmail.png" alt="search icon" height="20px" width="20px">
+
+                    <!-- placeholder -->
+                    <input type="text" class="search-input" placeholder="Enter your email address" name="Subscribe" />
+
+                    <!-- Subscribe Button -->
+                    <input type="submit" class="search-btn" value="Subscribe" />
+                </form>
+
+            </div>
+
+            <!-- Contact Info -->
+            <div style="margin-top: 20px;">
+
+                <div style="display: inline-flex; padding: 10px;">
+                    <img src="../assets/icons/location.png" alt="location icon" height="20px">
+                    <p style="margin-left: 10px;"> Durbarmarg, Kathmandu</p>
+                </div>
+
+                <div style="display: inline-flex; padding: 10px;">
+                    <img src="../assets/icons/call.png" alt="location icon" height="20px">
+                    <p style="margin-left: 10px;">+977 9814569852</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Copyright logo and stuff -->
+        <div class="footer-end">
+
+            <div>
+                <p style="color: white; margin-top: 10px;" align="center"><b>&copy; 2024 <span
+                            style="color: #4eb060;">Fresh</span><span style="color: white;">Mart</span>
+                        | All rights reserved.</b></p>
+            </div>
+
+            <!-- Payment Partner Logos -->
+            <div class="payment-partner">
+                <img src="../assets/icons/visa.png" alt="facebook logo" width="50px">
+                <img src="../assets/icons/Esewa_logo.png" alt="facebook logo" width="55px" height="32px">
+                <img src="../assets/icons/ime-pay.jpg" alt="facebook logo" width="50px">
+                <img src="../assets/icons/cod.png" alt="facebook logo" width="80px">
+            </div>
+
+            <!-- Social Media Logos -->
+            <div class="footer-social">
+                <p>Stay Connected:</p>
+                <a href="https://www.facebook.com/"> <img src="../assets/icons/facebook.png" alt="facebook logo" height="15px"></a>
+                <a href="https://twitter.com/"> <img src="../assets/icons/twitter.png" alt="facebook logo" height="15px"></a>
+                <a href="https://instagram.com/"> <img src="../assets/icons/instagram.png" alt="facebook logo" height="15px"></a>
+                <a href="https://youtube.com/"> <img src="../assets/icons/youtube.png" alt="facebook logo" height="15px"></a>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- End Of Footer -->
+
+    <script>
+        // hide show div
+        var div = document.getElementById('cart');
+        var display = 1;
+
+        function hideShowdiv() {
+            if (display == 1) {
+                div.style.display = 'block';
+                display = 0;
+            }
+            else {
+                div.style.display = 'none';
+                display = 1;
+            }
+
+            // hide cart on scroll
+            window.onscroll = () => {
+                div.style.display = 'none';
+            }
+
+        }
+    </script>
+
+
+</body>
+
+</html>

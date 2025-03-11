@@ -1,0 +1,388 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-commerce Grocery Store">
+    <meta name="author" content="Milan Shrestha">
+    <title>Fresh Mart</title>
+
+    <!-- Linking External CSS File -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Linking External Javascript File -->
+    <script src="../javascript/script.js"></script>
+
+</head>
+
+<body>
+    <!-- Start Of Navigation Header -->
+    <div id="scroll-behaviour">
+
+        <div class="header"></div>
+
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <a style="text-decoration: none;" href="../index.html">
+                    <span style="color: #5ccf71;">Fresh</span><span style="color: white;">Mart</span>
+                </a>
+            </div>
+            <!-- End Of Logo -->
+
+            <!-- Navbar Contents -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about-us.html" class="active-page">About Us</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+
+                <!-- Cart Icon -->
+                <li>
+                    <a href="#" onclick="hideShowdiv()"><img src="../assets/icons/cart.png" alt="cart icon"
+                            align="center" style="height: 26px; width: 26px;"></a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+    <!-- End Of Navigation Header -->
+
+    <!-- Hide Show Cart -->
+    <div id="cart" class="cart">
+
+        <div class="cart-box">
+
+            <!-- Nutella -->
+            <div style="display: inline-flex;">
+                <img src="../assets/products/nutella.png" alt="nutella" width="80px">
+
+                <div style="margin-top: 10px; margin-inline-start: 5px;">
+                    <h2 class="product-name">Nutella Hazelnut</h2>
+
+                    <p>Rs. 800 <span>x2</span>
+                    </p>
+                </div>
+            </div>
+
+
+            <hr class="cart-box-hr-1">
+
+            <!-- Lays -->
+            <div style="display: inline-flex;">
+                <img src="../assets/products/tomato.png" alt="nutella" width="80px">
+
+                <div style="margin-top: 10px; margin-inline-start: 5px;">
+                    <h2 class="product-name">Fresh Tomatoes</h2>
+
+                    <p>Rs. 150 <span>x5</span>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="cart-box-hr-1">
+
+            <!-- Nutella -->
+            <div style="display: inline-flex;">
+                <img src="../assets/products/lays.png" alt="nutella" width="80px">
+
+                <div style="margin-top: 10px; margin-inline-start: 5px;">
+                    <h2 class="product-name">Lays Deep Pizza</h2>
+
+                    <p>Rs. 120 <span>x4</span>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="cart-box-hr-1">
+
+            <h3>Total: <span style="color: #fe5100; font-size: 20px;">Rs.2830</span></h3>
+            <br>
+
+            <button style="width: 80%; margin: auto;" type="button" class="add-to-cart">Check Out</button>
+
+        </div>
+
+    </div>
+    <!-- End Of Hide Show Cart -->
+
+
+    <!-- Start Of Why Us -->
+    <section id="blog-container" style="margin-top: 120px; border: solid #333;">
+        <div>
+            <div class="slider-contents">
+
+                <img src="../assets/icons/background.png" class="background" alt="background" />
+
+                <div class="slider-container-text" style="margin-top: 80px;">
+                    <h1><span style="color: #fe5100;">WHY </span>US?</h1>
+
+                    <b style="margin-top: 20px; margin-bottom: 20px; font-size: 17px;"> Our grocery website offers <span
+                            style="color: #fe5100;">convenience</span>, quality, and variety like no other. Shop from
+                        the
+                        <span style="color: #fe5100;">comfort</span> of your home anytime, anywhere. Say goodbye to long
+                        queues and crowded aisles. We source
+                        our products from trusted suppliers, ensuring <span style="color: #fe5100;">freshness</span> and
+                        <span style="color: #fe5100;">reliability</span> with every purchase. Our
+                        website is user-friendly, making browsing, ordering and checkout a breeze.</b>
+
+                    <!-- Shop Now Button -->
+                    <a href="products.html">
+                        <button type="button" class="shop-btn">Shop Now</button>
+                    </a>
+                </div>
+
+                <!-- Image -->
+                <div>
+                    <img src="../assets/icons/why.jpg" alt="blog image" height="420px" style="margin-bottom: 100px;">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End Of Why Us -->
+
+
+    <!-- Start Of Meet Our Team Section -->
+    <section id="team">
+
+        <div class="team-heading">
+            <img src="../assets/icons/group.png" alt="team icon" height="40px" style="margin-right: 10px;">
+            <h1>Behind The Brand</h1>
+        </div>
+
+        <div class="team-container">
+
+            <!-- Milan -->
+            <div class="about-box">
+                <div class="top-bar"></div>
+
+                <div class="details">
+                    <h1>About Me</h1>
+                    <img src="../assets/icons/milan.jpg" alt="milan's pic">
+                    <strong>Milan Shrestha</strong>
+                    <p>milan.xrestha@gmail.com</p>
+                </div>
+
+                <!-- Social Media Logos -->
+                <div class="about-social">
+                    <a class="about-social-links" href="https://www.facebook.com/"> <img
+                            src="../assets/icons/facebook-black.png" alt="facebook logo" height="20px"></a>
+                    <a class="about-social-links" href="https://www.instagram.com/xrestha_alvin"> <img
+                            src="../assets/icons/instagram-black.png" alt="instagram logo" height="20px"></a>
+                    <a class="about-social-links" href="https://github.com/MilanXrestha/"> <img src="../assets/icons/github.png"
+                            alt="github logo" height="20px"></a>
+                    <a class="about-social-links" href="https://www.linkedin.com/in/milan-shrestha-71b6b8354/"> <img
+                            src="../assets/icons/linkedin.png" alt="linkedin logo" height="20px"></a>
+                </div>
+
+
+                <a href="../pages/portfolio/milan.html">
+                    <button type="button" class="about-btn" style="width: 120px;">View CV</button>
+                </a>
+
+                <div class="bottom-bar"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Of Meet Our Team Section -->
+
+
+    <!-- Contact Us Form -->
+    <section class="contact-us">
+
+        <div class="contact-container">
+
+            <!-- Contact Info Section -->
+            <div class="contact-info">
+
+                <h2 style="text-align: center; margin-bottom: 10px;">Contact Info</h2>
+
+                <div style="margin-top: 20px;">
+                    <span><img src="../assets/icons/location-black.png" height="20px" alt=""></span>
+                    <span>Durbarmarg, Kathmandu </span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <span><img src="../assets/icons/email-black.png" height="20px" alt=""></span>
+                    <span>freshmart.nepal@gmail.com</span>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <span><img src="../assets/icons/call-black.png" height="20px" alt=""></span>
+                    <span>+977 9814569852</span>
+                </div>
+
+                <!-- Social Media Logos -->
+                <div class="about-social" style="justify-content: center; margin-top: 50px;">
+                    <a href="#"> <img src="../assets/icons/facebook-black.png" alt="facebook logo" height="25px"></a>
+                    <a href="#"> <img src="../assets/icons/instagram-black.png" alt="instagram logo" height="25px"></a>
+                    <a href="#"> <img src="../assets/icons/github.png" alt="github logo" height="25px"></a>
+                    <a href="#"> <img src="../assets/icons/linkedin.png" alt="linkedin logo" height="25px"></a>
+                </div>
+
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="contact-form">
+
+                <h1>Get In Touch!</h1>
+
+                <div style="margin-top: 20px;">
+
+                    <form name="contactForm" onsubmit="validateForm()">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" class="contact-input" id="fname" name="firstname"
+                            placeholder="Your first name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" class="contact-input" id="lname" name="lastname"
+                            placeholder="Your last name..">
+
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                            <option value="notsay">I prefer not to say</option>
+                        </select>
+
+                        <label for="email">Email Address</label>
+                        <input type="text" class="contact-input" id="email" name="email"
+                            placeholder="Your email address..">
+
+
+
+                        <label for="reachVia">Please choose your preferred method of contact:</label>
+                        <br>
+                        <p><input type="radio" name="contactVia" value="gmail" checked style="margin-top: 10px;"> Email
+                            <input type="radio" name="contactVia" value="nth" style="margin-left: 50px;"> Don't Contact
+                            Me
+                        </p>
+
+                        <br>
+
+                        <label for="message">Message</label>
+                        <textarea name="message" class="contact-input" id="message"
+                            placeholder="Type your messsage here.."></textarea>
+
+                        <input type="submit" value="Submit" class="submit-btn">
+
+                    </form>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- End Of Contact Us Form -->
+
+    <!-- Footer -->
+    <footer style="margin-top: 200px;">
+
+        <!-- Subscription Email -->
+        <div class="footer-email">
+            <h2>Subscribe to us for <span style="color: #fe5100;">NEW ARRIVALS </span>and other information</h2>
+
+            <div style="margin-top: 20px;">
+                <form class="search-box" name="subsForm" onsubmit="subsAlert()">
+                    <!-- Gmail Icon -->
+                    <img src="../assets/icons/gmail.png" alt="search icon" height="20px" width="20px">
+
+                    <!-- placeholder -->
+                    <input type="text" class="search-input" placeholder="Enter your email address" name="Subscribe" />
+
+                    <!-- Subscribe Button -->
+                    <input type="submit" class="search-btn" value="Subscribe" />
+                </form>
+
+            </div>
+
+            <!-- Contact Info -->
+            <div style="margin-top: 20px;">
+
+                <div style="display: inline-flex; padding: 10px;">
+                    <img src="../assets/icons/location.png" alt="location icon" height="20px">
+                    <p style="margin-left: 10px;"> Durbarmarg, Kathmandu</p>
+                </div>
+
+                <div style="display: inline-flex; padding: 10px;">
+                    <img src="../assets/icons/call.png" alt="location icon" height="20px">
+                    <p style="margin-left: 10px;">+977 9814569852</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Copyright logo and stuff -->
+        <div class="footer-end">
+
+            <div>
+                <p style="color: white; margin-top: 10px;" align="center"><b>&copy; 2024 <span
+                            style="color: #4eb060;">Fresh</span><span style="color: white;">Mart</span>
+                        | All rights reserved.</b></p>
+            </div>
+
+            <!-- Payment Partner Logos -->
+            <div class="payment-partner">
+                <img src="../assets/icons/visa.png" alt="facebook logo" width="50px">
+                <img src="../assets/icons/Esewa_logo.png" alt="facebook logo" width="55px" height="32px">
+                <img src="../assets/icons/ime-pay.jpg" alt="facebook logo" width="50px">
+                <img src="../assets/icons/cod.png" alt="facebook logo" width="80px">
+            </div>
+
+            <!-- Social Media Logos -->
+            <div class="footer-social">
+                <p>Stay Connected:</p>
+                <a href="https://www.facebook.com/"> <img src="../assets/icons/facebook.png" alt="facebook logo"
+                        height="15px"></a>
+                <a href="https://twitter.com/"> <img src="../assets/icons/twitter.png" alt="facebook logo"
+                        height="15px"></a>
+                <a href="https://instagram.com/"> <img src="../assets/icons/instagram.png" alt="facebook logo"
+                        height="15px"></a>
+                <a href="https://youtube.com/"> <img src="../assets/icons/youtube.png" alt="facebook logo"
+                        height="15px"></a>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- End Of Footer -->
+
+    <script>
+        // hide show div
+        var div = document.getElementById('cart');
+        var display = 1;
+
+        function hideShowdiv() {
+            if (display == 1) {
+                div.style.display = 'block';
+                display = 0;
+            }
+            else {
+                div.style.display = 'none';
+                display = 1;
+            }
+
+            // hide cart on scroll
+            window.onscroll = () => {
+                div.style.display = 'none';
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

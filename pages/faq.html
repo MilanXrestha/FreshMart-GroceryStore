@@ -1,0 +1,290 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="E-commerce Grocery Store">
+    <meta name="author" content="Milan Shrestha">
+    <title>Fresh Mart</title>
+
+    <!-- Linking External CSS File -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Linking External Javascript File -->
+    <script src="../javascript/script.js"></script>
+
+</head>
+
+<body>
+    <!-- Start Of Navigation Header -->
+    <div id="scroll-behaviour">
+
+        <div class="header"></div>
+
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <a style="text-decoration: none;" href="../index.html">
+                    <span style="color: #5ccf71;">Fresh</span><span style="color: white;">Mart</span>
+                </a>
+            </div>
+            <!-- End Of Logo -->
+
+            <!-- Navbar Contents -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="faq.html" class="active-page">FAQs</a></li>
+
+                <!-- Cart Icon -->
+                <li>
+                    <a href="#" onclick="hideShowdiv()"><img src="../assets/icons/cart.png" alt="cart icon"
+                            align="center" style="height: 26px; width: 26px;"></a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+    <!-- End Of Navigation Header -->
+
+    <!-- Hide Show Cart -->
+    <div id="cart" class="cart">
+
+        <div class="cart-box">
+
+            <!-- Nutella -->
+            <div style="display: inline-flex;">
+                <img src="../assets/products/nutella.png" alt="nutella" width="80px">
+
+                <div style="margin-top: 10px; margin-inline-start: 5px;">
+                    <h2 class="product-name">Nutella Hazelnut</h2>
+
+                    <p>Rs. 800 <span>x2</span>
+                    </p>
+                </div>
+            </div>
+
+
+            <hr class="cart-box-hr-1">
+
+            <!-- Lays -->
+            <div style="display: inline-flex;">
+                <img src="../assets/products/tomato.png" alt="nutella" width="80px">
+
+                <div style="margin-top: 10px; margin-inline-start: 5px;">
+                    <h2 class="product-name">Fresh Tomatoes</h2>
+
+                    <p>Rs. 150 <span>x5</span>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="cart-box-hr-1">
+
+            <!-- Nutella -->
+            <div style="display: inline-flex;">
+                <img src="../assets/products/lays.png" alt="nutella" width="80px">
+
+                <div style="margin-top: 10px; margin-inline-start: 5px;">
+                    <h2 class="product-name">Lays Deep Pizza</h2>
+
+                    <p>Rs. 120 <span>x4</span>
+                    </p>
+                </div>
+            </div>
+
+            <hr class="cart-box-hr-1">
+
+            <h3>Total: <span style="color: #fe5100; font-size: 20px;">Rs.2830</span></h3>
+            <br>
+
+            <button style="width: 80%; margin: auto;" type="button" class="add-to-cart">Check Out</button>
+
+        </div>
+
+    </div>
+    <!-- End Of Hide Show Cart -->
+
+    <!-- Start Of FAQs -->
+    <!-- image -->
+    <div style="margin-top: 100px; text-align: center;">
+        <img src="../assets/icons/faqs.jpg" alt="title image" width="60%">
+    </div>
+
+
+    <div class="faq-container">
+        <p class="faq-box">
+            <b>1. What payment methods do you accept?</b>
+            <br>
+            We accept all major credit cards, debit cards, E-Sewa, Khalti, IME-Pay and other secure payment methods.
+        </p>
+
+        <br> <br>
+
+        <p class="faq-box">
+            <b>2. What are your delivery options?</b>
+            <br>
+            We offer standard delivery, express delivery and in some areas, same-day delivery. Delivery fees may vary
+            based on the option chosen.
+        </p>
+
+        <br> <br>
+
+        <p class="faq-box">
+            <b>3. What is your return policy?</b>
+            <br>
+            We offer a hassle-free return policy. If you are not satisfied with your purchase, you can return it within
+            5 days for a full refund or exchange.
+        </p>
+
+        <br> <br>
+
+        <p class="faq-box">
+            <b>4. Are the products fresh?</b>
+            <br>
+            Yes, we source our products from reputable suppliers to ensure freshness and quality. We also have strict
+            quality control measures in place to maintain the highest standards.
+        </p>
+
+        <br> <br>
+
+        <p class="faq-box">
+            <b>5. Can I modify or cancel my order after it has been placed?</b>
+            <br>
+            Once an order is placed, it enters our system for processing immediately. Therefore, modifications or
+            cancellations may not always be possible. However, you can contact our customer service team for assistance.
+        </p>
+
+        <br> <br>
+
+        <p class="faq-box">
+            <b>6. Do you offer discounts or promotions?</b>
+            <br>
+            Yes, we frequently offer discounts, promotions, and special deals. Make sure to sign up for our newsletter
+            or follow us on social media to stay updated on the latest offers.
+        </p>
+
+        <br> <br>
+
+        <p class="faq-box">
+            <b>7. Do you offer bulk ordering for businesses or events?</b>
+            <br>
+            Yes, we offer bulk ordering options for businesses, events, and special occasions. Please contact our sales
+            team for more information and customized solutions.
+        </p>
+
+        <br> <br>
+
+        <p class="faq-box">
+            <b>8. How do I contact customer support?</b>
+            <br>
+            You can reach our customer support team via email and phone. We are available 24/7 to assist you with any
+            inquiries or concerns.
+        </p>
+
+    </div>
+
+    <!-- End Of FAQs -->
+
+    <!-- Footer -->
+    <footer>
+
+        <!-- Subscription Email -->
+        <div class="footer-email">
+            <h2>Subscribe to us for <span style="color: #fe5100;">NEW ARRIVALS </span>and other information</h2>
+
+            <div style="margin-top: 20px;">
+                <form class="search-box" name="subsForm" onsubmit="subsAlert()">
+                    <!-- Gmail Icon -->
+                    <img src="../assets/icons/gmail.png" alt="search icon" height="20px" width="20px">
+
+                    <!-- placeholder -->
+                    <input type="text" class="search-input" placeholder="Enter your email address"  name="Subscribe"/>
+
+                    <!-- Subscribe Button -->
+                    <input type="submit" class="search-btn" value="Subscribe" />
+                </form>
+
+            </div>
+
+            <!-- Contact Info -->
+            <div style="margin-top: 20px;">
+
+                <div style="display: inline-flex; padding: 10px;">
+                    <img src="../assets/icons/location.png" alt="location icon" height="20px">
+                    <p style="margin-left: 10px;"> Durbarmarg, Kathmandu</p>
+                </div>
+
+                <div style="display: inline-flex; padding: 10px;">
+                    <img src="../assets/icons/call.png" alt="location icon" height="20px">
+                    <p style="margin-left: 10px;">+977 9814569852</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Copyright logo and stuff -->
+        <div class="footer-end">
+
+            <div>
+                <p style="color: white; margin-top: 10px;" align="center"><b>&copy; 2024 <span
+                            style="color: #4eb060;">Fresh</span><span style="color: white;">Mart</span>
+                        | All rights reserved.</b></p>
+            </div>
+
+            <!-- Payment Partner Logos -->
+            <div class="payment-partner">
+                <img src="../assets/icons/visa.png" alt="facebook logo" width="50px">
+                <img src="../assets/icons/Esewa_logo.png" alt="facebook logo" width="55px" height="32px">
+                <img src="../assets/icons/ime-pay.jpg" alt="facebook logo" width="50px">
+                <img src="../assets/icons/cod.png" alt="facebook logo" width="80px">
+            </div>
+
+            <!-- Social Media Logos -->
+            <div class="footer-social">
+                <p>Stay Connected:</p>
+                <a href="https://www.facebook.com/"> <img src="../assets/icons/facebook.png" alt="facebook logo"
+                        height="15px"></a>
+                <a href="https://twitter.com/"> <img src="../assets/icons/twitter.png" alt="facebook logo"
+                        height="15px"></a>
+                <a href="https://instagram.com/"> <img src="../assets/icons/instagram.png" alt="facebook logo"
+                        height="15px"></a>
+                <a href="https://youtube.com/"> <img src="../assets/icons/youtube.png" alt="facebook logo"
+                        height="15px"></a>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- End Of Footer -->
+
+    <script>
+        // hide show div
+        var div = document.getElementById('cart');
+        var display = 1;
+
+        function hideShowdiv() {
+            if (display == 1) {
+                div.style.display = 'block';
+                display = 0;
+            }
+            else {
+                div.style.display = 'none';
+                display = 1;
+            }
+
+            // hide cart on scroll
+            window.onscroll = () => {
+                div.style.display = 'none';
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
