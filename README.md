@@ -38,8 +38,8 @@ We welcome contributions to FreshMart! If you'd like to improve the website, fee
 ## Contact 📬
 If you have any questions or suggestions, feel free to reach out!
 
-- Email: milan.shrestha1886@gmail.com
-- GitHub: @MilanXrestha
+- **Email**: milan.shrestha1886@gmail.com
+- **GitHub**: [MilanXrestha](https://github.com/MilanXrestha)
 
 
 ## Thank You 🙏
