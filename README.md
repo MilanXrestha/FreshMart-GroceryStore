@@ -14,7 +14,7 @@ You can quickly get FreshMart running on your local machine with the following s
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/freshmart.git
+git clone https://github.com/MilanXrestha/freshmart.git
  ```
 
 ### 2. Navigate to the project folder:
